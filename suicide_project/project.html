@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beacon</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: 'Poppins', sans-serif;
+        overflow-x: hidden; /* Prevent horizontal scroll */
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 600;
+        color: #000;
+    }
+
+    p, li, a {
+        font-weight: 400;
+    }
+
+    /* Navbar */
+    .navbar {
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .navbar-brand {
+        font-weight: 700;
+        font-size: 1.8rem;
+        color: #000 !important;
+        letter-spacing: 1px;
+    }
+
+    .nav-link {
+        font-weight: 500;
+        color: #000 !important;
+    }
+
+    .nav-link:hover {
+        text-decoration: underline;
+        color: #ffffffd4 !important;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        width: 100%;
+        height: 100vh;
+        background-image: 
+        linear-gradient(to bottom, rgba(255,255,255,0) 70%, #B87333 100%), 
+        url('handorg.jpg');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-section h1, .hero-section h3 {
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+
+    /* Common Section Styles */
+    section {
+        background-image: linear-gradient(to top, rgba(255,255,255,0) 70%, #B87333 100%),
+                          linear-gradient(to bottom, rgba(255,255,255,0) 70%, #B87333 100%),
+                          url("bgimg.jpg");
+        background-size: cover;
+        background-position: center;
+        padding-top: 70px;
+        padding-bottom: 50px;
+        min-height: 100vh;
+    }
+
+    /* Resource Section */
+    .resource-section h2{
+        color: white;
+    }
+
+    .resource-section a{
+        text-decoration: none;
+    }
+
+    .resource-section h4:hover{
+        color: rgb(179, 179, 179);
+    }
+
+    /* Story Section */
+    .story-section h2{
+        color: white;
+    }
+
+    .story-section h3{
+        margin-top: 30px;
+    }
+
+    .story-section ul li h4:hover{
+        color: rgb(179, 179, 179);
+    }
+
+    .story-section ul li a{
+        text-decoration: none;
+    }
+
+    /* Contact form */
+    .form-container {
+        background-color: rgba(255, 255, 255, 0.95);
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .footer-section {
+        width: 100%;
+        background-color: #a06630;
+        padding: 10px 0;
+    }
+
+    .footer-section a {
+        text-decoration: none;
+        color: #000;
+    }
+  </style>
+</head>
+
+<body id="top">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg px-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Beacon</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about-section">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resourse-section">Resources</a></li>
+          <li class="nav-item"><a class="nav-link" href="#story-section">Stories</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reach-us">Reach Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+   <div id="home"></div>
+  <div class="hero-section d-flex flex-column justify-content-center align-items-center text-center">
+      <h1 class="display-5 fw-bold">Feeling lost? You are not alone</h1>
+      <h3 class="fw-normal mb-4">Beacon is here to guide you through difficult times and help you find hope</h3>
+      <a href="tel:+911722735446" class="btn btn-success btn-lg">Get Help</a>
+  </div>
+
+  <!-- About Section -->
+  <section id="about-section" class="about-section">
+    <div class="container">
+      <h2 class="text-light mt-5">About Beacon</h2>
+      <br>
+      <h4>Beacon is a safe space for teenagers facing stress, depression, loneliness, or suicidal thoughts. Our goal is to provide support, resources, and hope to every teen who feels lost or overwhelmed.</h4>
+      <br>
+      <ul class="mb-4">
+        <li class="mb-3">We care about mental health and emotional well-being.</li>
+        <li class="mb-3">Support is available anytime — you are not alone.</li>
+        <li class="mb-3">We connect teens with resources, professional help, and a supportive community.</li>
+        <li class="mb-3">We spread awareness to reduce stigma around mental health.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Resources Section -->
+  <section id="resourse-section" class="resource-section">
+    <div class="container">
+      <h2 class="mb-4 mt-5">Resources</h2>
+      <a href="https://www.cdc.gov/tobacco/campaign/tips/diseases/depression-anxiety.html" class="m-2"><h4>Learn About Depression and Anxiety</h4></a>
+      <a href="https://www.mentalhealth.org.uk/explore-mental-health/publications/how-manage-and-reduce-stress" class="m-2"><h4>How to Manage and Reduce Stress</h4></a>
+      <a href="https://www.thelivelovelaughfoundation.org/blog/others/5-daily-self-care-habits-for-a-healthier-happier-you" class="m-2"><h4>Daily Self-Care Habits to Enhance Your Well-Being</h4></a>
+      <a href="https://www.arcadia.edu/life-arcadia/campus-life-resources/health-wellness/counseling-services/help-friend/" class="m-2"><h4>How to Help a Friend Who’s Struggling Emotionally</h4></a>
+    </div>
+  </section>
+
+  <!-- Stories Section -->
+  <section id="story-section" class="story-section">
+    <div class="container">
+      <h2 class="mt-5">Stories of Hope</h2>
+      <h3 class="mb-3">Below are some inspiring stories of people who have survived suicidal thoughts</h3>
+      <ul class="mb-4">
+        <li class="m-4"><a href="https://livethroughthis.org/dorri-olds/"><h4><i>Dorri Olds</i></h4></a></li>
+        <li class="m-4"><a href="https://livethroughthis.org/dave-wise/"><h4><i>Dave Wise</i></h4></a></li>
+        <li class="m-4"><a href="https://livethroughthis.org/rhett-miller/"><h4><i>Rhett Miller</i></h4></a></li>
+        <li class="m-4"><a href="https://livethroughthis.org/megan-rotatori/"><h4><i>Megan Rotatori</i></h4></a></li>
+        <li class="m-4"><a href="https://livethroughthis.org/melody-moezzi/"><h4><i>Melody Moezzi</i></h4></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Reach Us Section -->
+  <section id="reach-us">
+    <div class="container d-flex justify-content-center align-items-center flex-column">
+      <div class="form-container col-12 col-sm-10 col-md-8 col-lg-6">
+        <h2>Reach Us</h2>
+        <hr>
+        <form id="contact-form" action="mail.php" method="POST">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" id="name" name="name" class="form-control" />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" id="email" name="email" class="form-control" />
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="tel" id="phone" name="phone" class="form-control" />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+          </div>
+          <button id="submit-form" type="submit" class="btn btn-primary w-100">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-section text-center">
+    <div class="text-center p-3">
+      © 2025 Copyright:
+      <a class="text-body" href="#">Beacon.com</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
