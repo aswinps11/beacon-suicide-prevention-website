@@ -41,4 +41,29 @@ This project focuses on mental health awareness and suicide prevention. It is in
 
 ---
 
-## Project Structure
+
+---
+
+## How to Run the Project
+1. Clone or download this repository  
+2. Open the `index.html` file in a web browser  
+3. Navigate through the website locally  
+
+---
+
+## Disclaimer
+This website is intended solely for educational and awareness purposes. It does not provide medical, psychological, or professional counseling services. If you or someone you know is experiencing suicidal thoughts or emotional distress, please seek immediate help from a suicide prevention helpline or a qualified mental health professional.
+
+---
+
+## Author
+Aswin PS  
+B.Tech Information Technology  
+Government Engineering College Barton Hill  
+APJ Abdul Kalam Technological University  
+
+---
+
+## Conclusion
+Beacon aims to act as a guiding light for individuals facing emotional struggles by promoting awareness, compassion, and access to help. Through simple design and meaningful content, the project emphasizes that every life matters and support is always available.
+
